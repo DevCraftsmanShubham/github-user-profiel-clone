@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const EditProfileBtn = styled.button<any>`
-width: 50%;
+width: 90%;
 border-radius: 6px;
 border: 1px solid #444c56;
 cursor: pointer;
