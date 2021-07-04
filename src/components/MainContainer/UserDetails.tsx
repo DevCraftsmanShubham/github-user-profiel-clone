@@ -9,6 +9,12 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
+const Divider = styled.div`
+    border-bottom-width: 1px;
+    border-bottom-color: #f2f2f2;
+    border-bottom-style: solid;
+    margin: 20px 0px;
+`
 const UserDetails: FC<{ userDetails: any }> = ({ userDetails }) => {
   console.log(userDetails);
   if (userDetails.data) {
@@ -18,6 +24,8 @@ const UserDetails: FC<{ userDetails: any }> = ({ userDetails }) => {
         <Avatar username={login} img={avatar_url} />
         <EditProfile />
         <FollowersFollowing followers={followers} following={following} />
+        <Divider />
+        
       </Container>
     );
   }
