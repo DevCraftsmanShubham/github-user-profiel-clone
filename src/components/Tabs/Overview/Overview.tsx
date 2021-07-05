@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import RepoCard from '../../Card/RepoCard';
 
-const Container = styled.div``;
+const Container = styled.div`
+height: 100vh
+`;
 
 const CardsContainer = styled.div`
   display: grid;

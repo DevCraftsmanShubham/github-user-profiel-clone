@@ -22,7 +22,7 @@ const Repos: FC<ReposProps> = ({ repos, storeRepoData }) => {
   }, []);
 
   return (
-    <div style={{ paddingTop: 50 }}>
+    <div style={{ paddingTop: 50, height: '100%' }}>
       {repos?.data?.map((repo: any) => {
         const { id, name, updated_at, language } = repo;
         return <RepoItem key={id} {...repo} />;

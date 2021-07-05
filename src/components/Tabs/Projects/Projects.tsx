@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Projects = () => {
   return (
-    <div>
+    <div style={{ height: '100vh'}}>
         Projects...
     </div>
   );

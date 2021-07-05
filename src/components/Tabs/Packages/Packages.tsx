@@ -1,6 +1,7 @@
 const Packages = () => {
     return (
-        <div>Packages tab..</div>
+        <div style={{ height: '100vh'}}>
+        Packages tab..</div>
     )
 }
 

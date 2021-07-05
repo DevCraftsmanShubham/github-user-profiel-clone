@@ -10,7 +10,7 @@ import Packages from '../Tabs/Packages/Packages';
 import Projects from '../Tabs/Projects/Projects';
 
 const Container = styled.div<any>`
-  height: calc(100vh - 60px);
+  height: calc(100vh -100px);
   display: grid;
   grid-template-columns: 0.25fr 1fr;
   padding-left: 10%;
@@ -18,6 +18,7 @@ const Container = styled.div<any>`
 `;
 
 const UserContainer = styled.div``;
+
 
 const MainContainer = (props: any) => {
   useEffect(() => {
@@ -53,7 +54,8 @@ const MainContainer = (props: any) => {
       <UserContainer>
         <UserDetails />
       </UserContainer>
-      <div>{renderTab()}</div>
+      <div style={{ height: '100%'}}>{renderTab()}</div>
+    
     </Container>
   );
 };

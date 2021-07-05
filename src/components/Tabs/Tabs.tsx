@@ -23,6 +23,7 @@ const Tab = styled.span<TabProps>`
   padding: 5px;
   color: #000;
   height: 20px;
+  font-weight: ${props => props.selected ?  'bold' : 'normal'};
   border-bottom-color: ${props => props.selected ? '#ff0000' : `transparent` };
   border-bottom-style: solid;
   border-bottom-width: 2px;

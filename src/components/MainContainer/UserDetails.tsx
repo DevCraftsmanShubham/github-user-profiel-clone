@@ -24,7 +24,7 @@ const UserDetails: FC<{ userDetails: any }> = ({ userDetails }) => {
         <EditProfile />
         <FollowersFollowing followers={followers} following={following} />
         <Divider />
-        <p>Organizations</p>
+        <p style={{ fontSize: 16, fontWeight: 'bold' }}>Organizations</p>
       </Container>
     );
   }

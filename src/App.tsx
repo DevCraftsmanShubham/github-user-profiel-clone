@@ -11,16 +11,28 @@ const Header = styled.div`
   background-color: #373e47;
 `;
 
-const Footer = styled.div``;
+const Footer = styled.div`
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #f2f2f2;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+`;
 
 function App() {
   return (
     <Provider store={store}>
-      <>
+      <div style={{ height: '100vh'}}>
         <Header />
         <Tabs />
         <MainContainer />
-      </>
+        <Footer>
+          <span>@ copyright</span>
+        </Footer>
+      </div>
     </Provider>
   );
 }
