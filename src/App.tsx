@@ -8,7 +8,7 @@ import store from './redux/store';
 
 const Header = styled.div`
   height: 60px;
-  background-color: #ff0000;
+  background-color: #373e47;
 `;
 
 const Footer = styled.div``;

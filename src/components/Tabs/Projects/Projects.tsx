@@ -1,7 +1,11 @@
+import styled from 'styled-components';
+
 const Projects = () => {
-    return (
-        <div>Projects tab..</div>
-    )
-}
+  return (
+    <div>
+        Projects...
+    </div>
+  );
+};
 
 export default Projects;

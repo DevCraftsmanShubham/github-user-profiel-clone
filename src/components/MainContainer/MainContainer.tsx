@@ -27,36 +27,33 @@ const MainContainer = (props: any) => {
           'https://api.github.com/users/shalabhsingh'
         );
         props.storeUser(response.data);
-        console.log(response);
-      } catch (error) {}
+      } catch (error) {
+        console.log('Main Container APi', error);
+      }
     })();
   }, []);
 
-
   const renderTab = () => {
-    const { selectedTab } = props.tabState
+    const { selectedTab } = props.tabState;
 
     switch (selectedTab) {
-      case 0: 
+      case 0:
         return <Overview />;
-      case 1: 
-        return <Repos />
-      case 2: 
-      return <Projects />
+      case 1:
+        return <Repos />;
+      case 2:
+        return <Projects />;
       case 3:
-        return <Packages />
+        return <Packages />;
     }
-  }
+  };
 
   return (
     <Container>
       <UserContainer>
         <UserDetails />
       </UserContainer>
-      <div>
-      {renderTab()}
-        
-      </div>
+      <div>{renderTab()}</div>
     </Container>
   );
 };

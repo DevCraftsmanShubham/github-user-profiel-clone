@@ -1,4 +1,4 @@
-import { FC } from 'hoist-non-react-statics/node_modules/@types/react';
+import { FC } from 'react';
 import styled from 'styled-components';
 import { FollowersFollowingProps } from '../../models/UserModel';
 import userGroup from '../../assets/user_group.png';

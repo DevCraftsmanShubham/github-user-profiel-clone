@@ -1,4 +1,4 @@
-import { FC } from 'hoist-non-react-statics/node_modules/@types/react';
+import { FC } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { tabsProps } from '../../models/TabModels';

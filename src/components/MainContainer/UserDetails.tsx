@@ -1,4 +1,4 @@
-import { FC } from 'hoist-non-react-statics/node_modules/@types/react';
+import { FC } from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import Avatar from './Avatar';
@@ -16,7 +16,6 @@ const Divider = styled.div`
     margin: 20px 0px;
 `
 const UserDetails: FC<{ userDetails: any }> = ({ userDetails }) => {
-  console.log(userDetails);
   if (userDetails.data) {
     const { login, avatar_url, followers, following, repos_url, organizations_url, starred_url } = userDetails.data;
     return (
@@ -25,7 +24,7 @@ const UserDetails: FC<{ userDetails: any }> = ({ userDetails }) => {
         <EditProfile />
         <FollowersFollowing followers={followers} following={following} />
         <Divider />
-        
+        <p>Organizations</p>
       </Container>
     );
   }
